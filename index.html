@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QuickNotes App</title>
+  <title>QuickNotes</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
@@ -11,35 +11,36 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Site header with the app title -->
+  <!-- Site header with the app name and tagline -->
   <header>
     <h1>QuickNotes</h1>
+    <p>Jot down your thoughts, ideas and to-dos</p>
   </header>
 
   <main>
     <!-- Section for creating a new note -->
     <section id="add-note-section">
-      <h2>Add a Note</h2>
+      <h2>Add a note</h2>
       <form id="note-form">
         <!-- Label linked to the note text input -->
         <label for="note-input">Note</label>
         <input type="text" id="note-input" name="note" placeholder="Write your note here...">
-        <!-- Category picker with at least three options -->
+        <!-- Category dropdown with three options -->
         <label for="note-category">Category</label>
         <select id="note-category" name="category">
           <option value="personal">Personal</option>
           <option value="work">Work</option>
-          <option value="ideas">Ideas</option>
+          <option value="study">Study</option>
         </select>
         <button type="submit">Add Note</button>
       </form>
-      <!-- Displays validation errors for the form -->
+      <!-- Empty paragraph for validation errors -->
       <p id="error-message"></p>
     </section>
 
-    <!-- Section listing existing notes with search and count -->
+    <!-- Section listing existing notes -->
     <section id="notes-section">
-      <h2>Your Notes</h2>
+      <h2>Your notes</h2>
       <input type="search" id="search-input" placeholder="Search notes...">
       <p id="note-count"></p>
       <ul id="notes-list"></ul>
