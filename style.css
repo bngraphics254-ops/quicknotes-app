@@ -24,8 +24,13 @@ header h1 {
   font-size: 1.75rem;
 }
 
+header p {
+  margin: 0.25rem 0 0;
+  opacity: 0.9;
+}
+
 main {
-  max-width: 720px;
+  max-width: 700px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
@@ -68,15 +73,11 @@ h2 {
   flex: 1 1 220px;
 }
 
-#note-category {
-  flex: 0 1 auto;
-}
-
 button {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 6px;
-  background-color: #2b6cb0;
+  background-color: #6b46c1;
   color: #ffffff;
   font-size: 1rem;
   font-family: inherit;
@@ -85,7 +86,7 @@ button {
 }
 
 button:hover {
-  background-color: #1d4e89;
+  background-color: #553c9a;
   transform: translateY(-1px);
 }
 
@@ -116,28 +117,25 @@ button:hover {
 .note {
   padding: 1rem;
   border: 1px solid #6b46c1;
+  border-left-width: 4px;
   border-radius: 8px;
   margin: 0 0 0.75rem;
   background-color: #ffffff;
-  border-left-width: 4px;
 }
 
-.note.personal {
-  border-left-color: #38a169;
-  background-color: #f0fff4;
+.category-personal {
+  border-left-color: teal;
 }
 
-.note.work {
-  border-left-color: #dd6b20;
-  background-color: #fffaf0;
+.category-work {
+  border-left-color: darkred;
 }
 
-.note.ideas {
-  border-left-color: #805ad5;
-  background-color: #faf5ff;
+.category-study {
+  border-left-color: blue;
 }
 
-.note .note-category-tag {
+.note-category-tag {
   display: inline-block;
   font-size: 0.75rem;
   font-weight: 700;
@@ -146,21 +144,37 @@ button:hover {
   margin-bottom: 0.35rem;
 }
 
-.note.personal .note-category-tag {
-  color: #2f855a;
+.category-personal .note-category-tag {
+  color: teal;
 }
 
-.note.work .note-category-tag {
-  color: #c05621;
+.category-work .note-category-tag {
+  color: darkred;
 }
 
-.note.ideas .note-category-tag {
-  color: #6b46c1;
+.category-study .note-category-tag {
+  color: blue;
 }
 
-.note .note-text {
-  margin: 0;
+.note-text {
+  margin: 0 0 0.35rem;
   word-break: break-word;
+}
+
+.note-date {
+  margin: 0 0 0.5rem;
+  color: #52606d;
+  font-size: 0.8rem;
+}
+
+.note button {
+  padding: 0.3rem 0.75rem;
+  font-size: 0.85rem;
+}
+
+.no-results {
+  color: #52606d;
+  font-style: italic;
 }
 
 footer {
