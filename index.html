@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickNotes</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Site header with the app title -->
+  <header>
+    <h1>QuickNotes</h1>
+  </header>
+
+  <main>
+    <!-- Section for creating a new note -->
+    <section id="add-note-section">
+      <h2>Add a Note</h2>
+      <form id="note-form">
+        <!-- Label linked to the note text input -->
+        <label for="note-input">Note</label>
+        <input type="text" id="note-input" name="note" placeholder="Write your note here...">
+        <!-- Category picker with at least three options -->
+        <label for="note-category">Category</label>
+        <select id="note-category" name="category">
+          <option value="personal">Personal</option>
+          <option value="work">Work</option>
+          <option value="ideas">Ideas</option>
+        </select>
+        <button type="submit">Add Note</button>
+      </form>
+      <!-- Displays validation errors for the form -->
+      <p id="error-message"></p>
+    </section>
+
+    <!-- Section listing existing notes with search and count -->
+    <section id="notes-section">
+      <h2>Your Notes</h2>
+      <input type="search" id="search-input" placeholder="Search notes...">
+      <p id="note-count"></p>
+      <ul id="notes-list"></ul>
+    </section>
+  </main>
+
+  <!-- Page footer -->
+  <footer>
+    <p>&copy; 2026 QuickNotes</p>
+  </footer>
+</body>
+</html>
